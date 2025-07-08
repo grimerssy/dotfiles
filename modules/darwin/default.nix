@@ -2,7 +2,7 @@
 {
   imports = [
     inputs.mac-app-util.darwinModules.default
-    ../shared
+    ../system
     ./home-manager.nix
     ./keyboard.nix
     ./shell.nix

@@ -37,7 +37,8 @@ in
     sharedModules = [ ../home ];
     useGlobalPkgs = true;
     users = genAttrs config.users.normalUsers (name: {
-      imports = [ "${cfg.normalUserConfigRoot}/${name}.nix" ];
+      # TODO temporary crutch, redo whole user/host declaration
+      imports = [ ../../users/grimerssy.nix ];
     });
   };
 }

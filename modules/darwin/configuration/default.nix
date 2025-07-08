@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ../shared
+    ../../system/configuration
     ./fonts.nix
     ./networking.nix
     ./settings.nix

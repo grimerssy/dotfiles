@@ -8,9 +8,9 @@ let
     inputs.nix-darwin.lib.darwinSystem {
       specialArgs = { inherit inputs; };
       modules = [
-        ../modules/darwin
+        ../darwin
         { networking.hostName = lib.mkDefault host; }
-        ../system/${host}.nix
+        ../../hosts/${host}.nix
       ];
     };
 in
