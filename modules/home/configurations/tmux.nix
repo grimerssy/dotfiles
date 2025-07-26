@@ -1,7 +1,8 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.tmux = {
     enable = true;
+    shell = "${pkgs.fish}/bin/fish";
     sensibleOnTop = false; # TODO
     baseIndex = 1;
     disableConfirmationPrompt = true;

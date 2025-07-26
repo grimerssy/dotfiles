@@ -9,6 +9,7 @@ let
   zoxide = "${pkgs.zoxide}/bin/zoxide";
   sha256sum = "${pkgs.coreutils}/bin/sha256sum";
 
+  # TODO move to program configs
   restart-de =
     let
       launchAgent = service: "$HOME/Library/LaunchAgents/org.nixos.${service}.plist";

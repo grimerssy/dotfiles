@@ -2,6 +2,7 @@
 {
   services.yabai =
     let
+      # TODO read from config
       package = pkgs.yabai;
       yabai = "${package}/bin/yabai";
       xargs = "xargs";
