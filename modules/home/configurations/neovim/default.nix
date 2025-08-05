@@ -67,7 +67,6 @@
       luasnip
       friendly-snippets
 
-      catppuccin-nvim
       lualine-nvim
       dressing-nvim
       nvim-notify

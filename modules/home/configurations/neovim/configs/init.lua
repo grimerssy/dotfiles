@@ -15,7 +15,6 @@ local configs = {
   "harpoon",
 
   "icons",
-  "catppuccin",
   "oil",
   "lualine",
   "gitsigns",

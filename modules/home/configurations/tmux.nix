@@ -45,9 +45,6 @@
 
       bind-key . run-shell 'open -R "$(tmux display-message -p "#{pane_current_path}")"'
 
-      set -g pane-border-style fg=brightblack
-      set -g pane-active-border-style fg=brightblack
-
       set -g status-position top
 
       set -g status-justify centre
@@ -55,16 +52,16 @@
       set -g status-style 'bg=default'
 
       set -g status-left-length 32
-      set -g status-left '#[fg=blue]#[fg=black]#[bg=blue]#{session_name}#[fg=blue]#[bg=default]'
-
       set -g status-right-length 32
-      set -g status-right '#[bg=default] #{s|.| |:session_name} '
 
-      set -g window-status-separator '   '
+      # old
+      # set -g status-left '#[fg=blue]#[fg=black]#[bg=blue]#{session_name}#[fg=blue]#[bg=default]'
+      # set -g status-right '#[bg=default] #{s|.| |:session_name} '
+      # set -g window-status-separator '   '
 
       # TODO when move to stylix fix in unconfigured terminals
-      set -g window-status-format "#[fg=white]#[fg=black]#[bg=white]#I #[fg=white]#[bg=black] #W #[fg=black]#[bg=default]"
-      set -g window-status-current-format "#[fg=blue]#[fg=black]#[bg=blue]#I #[fg=white]#[bg=black] #W #[fg=black]#[bg=default]"
+      # set -g window-status-format "#[fg=white]#[fg=black]#[bg=white]#I #[fg=white]#[bg=black] #W #[fg=black]#[bg=default]"
+      # set -g window-status-current-format "#[fg=blue]#[fg=black]#[bg=blue]#I #[fg=white]#[bg=black] #W #[fg=black]#[bg=default]"
     '';
   };
 }
